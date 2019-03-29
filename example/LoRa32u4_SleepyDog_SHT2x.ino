@@ -79,8 +79,8 @@ void setup()
     // if error init stop cycle
     if(!lora.begin()) {
         #ifdef MY_DEBUG
-        Serial.println("Failed");
-        Serial.println("Check your radio");
+        Serial.println(F("Failed"));
+        Serial.println(F("Check your radio"));
         #endif
         while(true) {
             // blink LED to indicate an error
